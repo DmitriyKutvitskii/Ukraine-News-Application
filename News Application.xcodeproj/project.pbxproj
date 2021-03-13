@@ -12,6 +12,9 @@
 		60D4826625FCEDB500ECE5A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D4826525FCEDB500ECE5A5 /* ViewController.swift */; };
 		60D4826B25FCEDB500ECE5A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60D4826A25FCEDB500ECE5A5 /* Assets.xcassets */; };
 		60D4826E25FCEDB500ECE5A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60D4826C25FCEDB500ECE5A5 /* LaunchScreen.storyboard */; };
+		60D4827A25FD018400ECE5A5 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D4827925FD018400ECE5A5 /* APIKey.swift */; };
+		60D4827E25FD02CA00ECE5A5 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D4827D25FD02CA00ECE5A5 /* News.swift */; };
+		60D4828225FD055300ECE5A5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D4828125FD055300ECE5A5 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		60D4826A25FCEDB500ECE5A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60D4826D25FCEDB500ECE5A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60D4826F25FCEDB500ECE5A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60D4827925FD018400ECE5A5 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		60D4827D25FD02CA00ECE5A5 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		60D4828125FD055300ECE5A5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,9 @@
 		60D4826025FCEDB400ECE5A5 /* News Application */ = {
 			isa = PBXGroup;
 			children = (
+				60D4828025FD04F900ECE5A5 /* Services */,
+				60D4827C25FD02A100ECE5A5 /* Models */,
+				60D4827825FD014700ECE5A5 /* Config */,
 				60D4826125FCEDB500ECE5A5 /* AppDelegate.swift */,
 				60D4826325FCEDB500ECE5A5 /* SceneDelegate.swift */,
 				60D4826525FCEDB500ECE5A5 /* ViewController.swift */,
@@ -62,6 +71,30 @@
 				60D4826F25FCEDB500ECE5A5 /* Info.plist */,
 			);
 			path = "News Application";
+			sourceTree = "<group>";
+		};
+		60D4827825FD014700ECE5A5 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				60D4827925FD018400ECE5A5 /* APIKey.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		60D4827C25FD02A100ECE5A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				60D4827D25FD02CA00ECE5A5 /* News.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		60D4828025FD04F900ECE5A5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				60D4828125FD055300ECE5A5 /* NetworkManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,8 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60D4828225FD055300ECE5A5 /* NetworkManager.swift in Sources */,
 				60D4826625FCEDB500ECE5A5 /* ViewController.swift in Sources */,
 				60D4826225FCEDB500ECE5A5 /* AppDelegate.swift in Sources */,
+				60D4827A25FD018400ECE5A5 /* APIKey.swift in Sources */,
+				60D4827E25FD02CA00ECE5A5 /* News.swift in Sources */,
 				60D4826425FCEDB500ECE5A5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
