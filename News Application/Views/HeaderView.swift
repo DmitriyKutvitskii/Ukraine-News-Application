@@ -25,7 +25,7 @@ final class HeaderView: UIView {
 		v.image = UIImage(systemName: "circle.black.png", withConfiguration: config)?.withRenderingMode(.alwaysOriginal)
 		
 		return v
-	}()
+		}()
 	
 	private lazy var plusImage: UIImageView = {
 		let v = UIImageView()
