@@ -1,9 +1,6 @@
 //
 //  AppDelegate.swift
 //  News Application
-//
-//  Created by Дмитрий Кутвицкий on 13.03.2021.
-//
 
 import UIKit
 
