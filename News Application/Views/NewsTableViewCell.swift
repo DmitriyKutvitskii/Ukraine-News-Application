@@ -8,8 +8,14 @@ final class NewsTableViewCell: UITableViewCell {
 	
 	var newsVM: NewsViewModel? {
 		didSet {
-			if let news = newsVM {
-				
+			if let newsVM = newsVM {
+				titleLabel.text = newsVM.title
+				NetworkManager.shared.getImage(urlString: newsVM.urlToImage) { (data) in
+					guard let data = data else { return }
+					DispatchQueue.main.async {
+						self.newsImage.image = UIImage (data: data)
+					}
+				}
 			}
 		}
 	}

@@ -14,8 +14,8 @@ class ShadowImageView: UIView {
 	private lazy var imageView: UIImageView = {
 		let v = UIImageView()
 		v.translatesAutoresizingMaskIntoConstraints = false
-		v.contentMode = .scaleAspectFit
-		v.layer.cornerRadius = 20
+		v.contentMode = .scaleAspectFill
+		v.layer.cornerRadius = 25
 		v.clipsToBounds = true
 		return v
 	}()
