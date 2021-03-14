@@ -78,8 +78,8 @@
 				60D4826125FCEDB500ECE5A5 /* AppDelegate.swift */,
 				60D4826325FCEDB500ECE5A5 /* SceneDelegate.swift */,
 				60D4826525FCEDB500ECE5A5 /* ViewController.swift */,
-				60D4826A25FCEDB500ECE5A5 /* Assets.xcassets */,
 				60D4826C25FCEDB500ECE5A5 /* LaunchScreen.storyboard */,
+				60D4826A25FCEDB500ECE5A5 /* Assets.xcassets */,
 				60D4826F25FCEDB500ECE5A5 /* Info.plist */,
 			);
 			path = "News Application";

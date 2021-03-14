@@ -11,7 +11,11 @@ final class HeaderView: UIView {
 	private lazy var headingLabel: UILabel = {
 		let v = UILabel()
 		v.translatesAutoresizingMaskIntoConstraints = false
-		v.text = "News"
+		v.text = " Ukraine News "
+		v.textColor = .red
+		v.layer.borderWidth = 3.00
+		v.layer.cornerRadius = 14.00
+		v.layer.borderColor = UIColor.black.cgColor
 		v.font = UIFont.boldSystemFont(ofSize: fontSize)
 		return v
 		
@@ -22,7 +26,7 @@ final class HeaderView: UIView {
 		v.translatesAutoresizingMaskIntoConstraints = false
 		v.contentMode = .scaleAspectFit
 		let config = UIImage.SymbolConfiguration(pointSize: fontSize, weight: .bold)
-		v.image = UIImage(systemName: "circle.black.png", withConfiguration:
+		v.image = UIImage(systemName: "waveform.path.ecg", withConfiguration:
 		  config)?.withRenderingMode(.alwaysOriginal)
 		
 		return v
@@ -32,7 +36,7 @@ final class HeaderView: UIView {
 		let v = UIImageView()
 		v.translatesAutoresizingMaskIntoConstraints = false
 		let config = UIImage.SymbolConfiguration(pointSize: fontSize, weight: .bold)
-		v.image = UIImage(systemName: "plus", withConfiguration: config)?.withRenderingMode(.alwaysOriginal)
+		v.image = UIImage(systemName: "arrowtriangle.forward.circle", withConfiguration: config)?.withRenderingMode(.alwaysOriginal)
 		
 		return v
 	}()
@@ -41,9 +45,11 @@ final class HeaderView: UIView {
 	private lazy var subheadlineLabel: UILabel = {
 		let v = UILabel()
 		v.translatesAutoresizingMaskIntoConstraints = false
-		v.font = v.font.withSize(fontSize)
-		v.text = "Top Headlines"
-		v.textColor = .gray
+		v.text = "-BREAKING NEWS!-"
+		v.font = UIFont.boldSystemFont(ofSize: 22.0)
+		v.textColor = .black
+//	v.font = v.font.withSize(fontSize)
+		
 		return v
 		
 	}()
@@ -77,8 +83,9 @@ final class HeaderView: UIView {
    func setupConstraints() {
 // NEWS Header
 		NSLayoutConstraint.activate([
-			headerStackView.leadingAnchor.constraint(equalTo: leadingAnchor),
-			headerStackView.topAnchor.constraint(equalTo: topAnchor)
+      headerStackView.leadingAnchor.constraint(equalTo: leadingAnchor),
+			headerStackView.topAnchor.constraint(equalTo: topAnchor),
+			headerStackView.trailingAnchor.constraint(equalTo: trailingAnchor)
 		])
 		
 //Subheadline
