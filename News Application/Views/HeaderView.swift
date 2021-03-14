@@ -26,7 +26,7 @@ final class HeaderView: UIView {
 		  config)?.withRenderingMode(.alwaysOriginal)
 		
 		return v
-	}()
+		}()
 	
 	private lazy var plusImage: UIImageView = {
 		let v = UIImageView()
