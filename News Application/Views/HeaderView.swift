@@ -22,7 +22,8 @@ final class HeaderView: UIView {
 		v.translatesAutoresizingMaskIntoConstraints = false
 		v.contentMode = .scaleAspectFit
 		let config = UIImage.SymbolConfiguration(pointSize: fontSize, weight: .bold)
-		v.image = UIImage(systemName: "circle.black.png", withConfiguration: config)?.withRenderingMode(.alwaysOriginal)
+		v.image = UIImage(systemName: "circle.black.png", withConfiguration:
+		  config)?.withRenderingMode(.alwaysOriginal)
 		
 		return v
 	}()

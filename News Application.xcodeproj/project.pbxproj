@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6062332F25FE0F45001FC32A /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6062332E25FE0F45001FC32A /* NewsTableViewCell.swift */; };
 		60D4826225FCEDB500ECE5A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D4826125FCEDB500ECE5A5 /* AppDelegate.swift */; };
 		60D4826425FCEDB500ECE5A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D4826325FCEDB500ECE5A5 /* SceneDelegate.swift */; };
 		60D4826625FCEDB500ECE5A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D4826525FCEDB500ECE5A5 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6062332E25FE0F45001FC32A /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		60D4825E25FCEDB400ECE5A5 /* News Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "News Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D4826125FCEDB500ECE5A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60D4826325FCEDB500ECE5A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			children = (
 				60D4829025FD492700ECE5A5 /* HeaderView.swift */,
 				60D4829325FD6AC400ECE5A5 /* ShadowImageView.swift */,
+				6062332E25FE0F45001FC32A /* NewsTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60D4828225FD055300ECE5A5 /* NetworkManager.swift in Sources */,
+				6062332F25FE0F45001FC32A /* NewsTableViewCell.swift in Sources */,
 				60D4829125FD492700ECE5A5 /* HeaderView.swift in Sources */,
 				60D4826625FCEDB500ECE5A5 /* ViewController.swift in Sources */,
 				60D4826225FCEDB500ECE5A5 /* AppDelegate.swift in Sources */,
