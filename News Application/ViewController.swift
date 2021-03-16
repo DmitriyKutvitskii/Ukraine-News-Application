@@ -43,15 +43,15 @@ class ViewController: UIViewController {
 	func setupConstraints() {
 		// header
 		NSLayoutConstraint.activate([
-			headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-			headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10)
+			headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25),
+			headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15),
 		])
 		
 		// table View
 		NSLayoutConstraint.activate([
 			tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
 			tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-			tableView.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: 8),
+			tableView.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: 10),
 			tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
 		
 		])

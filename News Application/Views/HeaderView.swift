@@ -12,11 +12,12 @@ final class HeaderView: UIView {
 		let v = UILabel()
 		v.translatesAutoresizingMaskIntoConstraints = false
 		v.text = " Ukraine News "
-		v.textColor = .red
-		v.layer.borderWidth = 3.00
-		v.layer.cornerRadius = 14.00
-		v.layer.borderColor = UIColor.black.cgColor
-		v.font = UIFont.boldSystemFont(ofSize: fontSize)
+		v.font = UIFont(name: "Hoefler Text", size: fontSize)
+		v.textColor = .black
+//		v.layer.borderWidth = 2.00
+//		v.layer.cornerRadius = 13.00
+//		v.layer.borderColor = UIColor.black.cgColor
+//	 	v.font = UIFont.boldSystemFont(ofSize: fontSize)
 		return v
 		
 	}()
@@ -36,7 +37,7 @@ final class HeaderView: UIView {
 		let v = UIImageView()
 		v.translatesAutoresizingMaskIntoConstraints = false
 		let config = UIImage.SymbolConfiguration(pointSize: fontSize, weight: .bold)
-		v.image = UIImage(systemName: "arrowtriangle.forward.circle", withConfiguration: config)?.withRenderingMode(.alwaysOriginal)
+		v.image = UIImage(systemName: "waveform.path.ecg", withConfiguration: config)?.withRenderingMode(.alwaysOriginal)
 		
 		return v
 	}()
@@ -46,10 +47,8 @@ final class HeaderView: UIView {
 		let v = UILabel()
 		v.translatesAutoresizingMaskIntoConstraints = false
 		v.text = "-BREAKING NEWS!-"
-		v.font = UIFont.boldSystemFont(ofSize: 22.0)
-		v.textColor = .black
-//	v.font = v.font.withSize(fontSize)
-		
+		v.font = UIFont(name: "Copperplate", size: 20.00)
+		v.textColor = .black		
 		return v
 		
 	}()
@@ -85,7 +84,7 @@ final class HeaderView: UIView {
 		NSLayoutConstraint.activate([
       headerStackView.leadingAnchor.constraint(equalTo: leadingAnchor),
 			headerStackView.topAnchor.constraint(equalTo: topAnchor),
-			headerStackView.trailingAnchor.constraint(equalTo: trailingAnchor)
+  		headerStackView.trailingAnchor.constraint(equalTo: trailingAnchor),
 		])
 		
 //Subheadline
