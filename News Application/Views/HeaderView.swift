@@ -14,6 +14,7 @@ final class HeaderView: UIView {
 		v.text = " Ukraine News "
 		v.font = UIFont(name: "Hoefler Text", size: fontSize)
 		v.textColor = .black
+		v.textAlignment = .center
 //		v.layer.borderWidth = 2.00
 //		v.layer.cornerRadius = 13.00
 //		v.layer.borderColor = UIColor.black.cgColor
@@ -48,7 +49,8 @@ final class HeaderView: UIView {
 		v.translatesAutoresizingMaskIntoConstraints = false
 		v.text = "-BREAKING NEWS!-"
 		v.font = UIFont(name: "Copperplate", size: 20.00)
-		v.textColor = .black		
+		v.textColor = .black
+		v.textAlignment = .center
 		return v
 		
 	}()
@@ -82,16 +84,18 @@ final class HeaderView: UIView {
    func setupConstraints() {
 // NEWS Header
 		NSLayoutConstraint.activate([
-      headerStackView.leadingAnchor.constraint(equalTo: leadingAnchor),
 			headerStackView.topAnchor.constraint(equalTo: topAnchor),
-  		headerStackView.trailingAnchor.constraint(equalTo: trailingAnchor),
+			headerStackView.leadingAnchor.constraint(equalTo: leadingAnchor),
+			headerStackView.trailingAnchor.constraint(equalTo: trailingAnchor),
+			headerStackView.bottomAnchor.constraint(equalTo: headerStackView.bottomAnchor)
 		])
 		
 //Subheadline
 		NSLayoutConstraint.activate([
+			subheadlineLabel.topAnchor.constraint(equalTo: headerStackView.bottomAnchor, constant: 10),
 			subheadlineLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
-			subheadlineLabel.topAnchor.constraint(equalTo: headerStackView.bottomAnchor, constant: 8),
-			subheadlineLabel.bottomAnchor.constraint(equalTo: bottomAnchor)
+			subheadlineLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
+			subheadlineLabel.bottomAnchor.constraint(equalTo: bottomAnchor),
 		])
 	}
 }
