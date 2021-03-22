@@ -11,14 +11,10 @@ final class HeaderView: UIView {
 	private lazy var headingLabel: UILabel = {
 		let v = UILabel()
 		v.translatesAutoresizingMaskIntoConstraints = false
-		v.text = " Ukraine News "
+		v.text = "Ukraine News"
+		v.textAlignment = .center
 		v.font = UIFont(name: "Hoefler Text", size: fontSize)
 		v.textColor = .black
-		v.textAlignment = .center
-//		v.layer.borderWidth = 2.00
-//		v.layer.cornerRadius = 13.00
-//		v.layer.borderColor = UIColor.black.cgColor
-//	 	v.font = UIFont.boldSystemFont(ofSize: fontSize)
 		return v
 		
 	}()
@@ -37,6 +33,7 @@ final class HeaderView: UIView {
 	private lazy var plusImage: UIImageView = {
 		let v = UIImageView()
 		v.translatesAutoresizingMaskIntoConstraints = false
+		v.contentMode = .scaleAspectFit
 		let config = UIImage.SymbolConfiguration(pointSize: fontSize, weight: .bold)
 		v.image = UIImage(systemName: "waveform.path.ecg", withConfiguration: config)?.withRenderingMode(.alwaysOriginal)
 		
@@ -59,6 +56,7 @@ final class HeaderView: UIView {
 		let v = UIStackView(arrangedSubviews: [headerCircleImage, headingLabel, plusImage])
 		v.translatesAutoresizingMaskIntoConstraints = false
 		v.axis = .horizontal
+		v.distribution = .equalCentering
 		return v
 		
 	}()
