@@ -1,4 +1,3 @@
-//
 //  NewsViewModel.swift
 //  News Application
 
@@ -22,5 +21,5 @@ struct NewsViewModel {
 // Image news - nill (photo)
 	var urlToImage: String {
 		return news.urlToImage ?? "https://ak.picdn.net/shutterstock/videos/27539827/thumb/8.jpg"
-	}
+  }
 }

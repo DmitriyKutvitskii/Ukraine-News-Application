@@ -1,4 +1,3 @@
-//
 //  News.swift
 //  News Application
 

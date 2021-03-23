@@ -1,4 +1,3 @@
-//
 //  HeaderView.swift
 //  News Application
 
@@ -16,7 +15,6 @@ final class HeaderView: UIView {
 		v.font = UIFont(name: "Hoefler Text", size: fontSize)
 		v.textColor = .black
 		return v
-		
 	}()
 	
 	private lazy var headerCircleImage: UIImageView = {
@@ -26,7 +24,6 @@ final class HeaderView: UIView {
 		let config = UIImage.SymbolConfiguration(pointSize: fontSize, weight: .bold)
 		v.image = UIImage(systemName: "waveform.path.ecg", withConfiguration:
 		  config)?.withRenderingMode(.alwaysOriginal)
-		
 		return v
 		}()
 	
@@ -36,7 +33,6 @@ final class HeaderView: UIView {
 		v.contentMode = .scaleAspectFit
 		let config = UIImage.SymbolConfiguration(pointSize: fontSize, weight: .bold)
 		v.image = UIImage(systemName: "waveform.path.ecg", withConfiguration: config)?.withRenderingMode(.alwaysOriginal)
-		
 		return v
 	}()
 	
@@ -45,11 +41,13 @@ final class HeaderView: UIView {
 		let v = UILabel()
 		v.translatesAutoresizingMaskIntoConstraints = false
 		v.text = "-BREAKING NEWS!-"
-		v.font = UIFont(name: "Copperplate", size: 20.00)
+		v.layer.cornerRadius = 10
+		v.layer.borderWidth = 0.8
+		v.layer.borderColor = UIColor.red.cgColor
+		v.font = UIFont(name: "Copperplate", size: 22.00)
 		v.textColor = .black
 		v.textAlignment = .center
 		return v
-		
 	}()
 	
 	private lazy var headerStackView: UIStackView = {
@@ -58,7 +56,6 @@ final class HeaderView: UIView {
 		v.axis = .horizontal
 		v.distribution = .equalCentering
 		return v
-		
 	}()
 	
 	init(fontSize:CGFloat) {
@@ -72,14 +69,12 @@ final class HeaderView: UIView {
 		fatalError("init(coder:) has not been implemented")
 	}
 	func setupView() {
-		
 		addSubview(headerStackView)
 		addSubview(subheadlineLabel)
-
-		  setupConstraints()
+		setupConstraints()
 	}
 	
-   func setupConstraints() {
+	func setupConstraints() {
 // NEWS Header
 		NSLayoutConstraint.activate([
 			headerStackView.topAnchor.constraint(equalTo: topAnchor),
@@ -87,9 +82,8 @@ final class HeaderView: UIView {
 			headerStackView.trailingAnchor.constraint(equalTo: trailingAnchor),
 			headerStackView.bottomAnchor.constraint(equalTo: headerStackView.bottomAnchor)
 		])
-		
 //Subheadline
-		NSLayoutConstraint.activate([
+	  NSLayoutConstraint.activate([
 			subheadlineLabel.topAnchor.constraint(equalTo: headerStackView.bottomAnchor, constant: 10),
 			subheadlineLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
 			subheadlineLabel.trailingAnchor.constraint(equalTo: trailingAnchor),

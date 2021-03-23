@@ -1,4 +1,3 @@
-//
 //  ViewController.swift
 //  News Application
 
@@ -26,7 +25,6 @@ class ViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
 		setupView()
 		fetchNews()
 		
@@ -36,7 +34,6 @@ class ViewController: UIViewController {
 		view.backgroundColor = .white
 		view.addSubview(headerView)
 		view.addSubview(tableView)
-		
 		setupConstraints()
 	}
 	
@@ -48,7 +45,6 @@ class ViewController: UIViewController {
 			headerView.leadingAnchor.constraint(greaterThanOrEqualTo: view.leadingAnchor),
 			headerView.trailingAnchor.constraint(lessThanOrEqualTo: view.trailingAnchor),
 		])
-		
 		// table View
 		NSLayoutConstraint.activate([
 			tableView.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: 10),
@@ -73,7 +69,6 @@ class ViewController: UIViewController {
 //			print(news[0].title)
 //		}
 
-
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		viewModel.newsVM.count
@@ -93,7 +88,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 		}
 		
 	//Opening window in safari
-		
 		let config = SFSafariViewController.Configuration()
 		let safariViewController = SFSafariViewController(url: url, configuration: config)
 		safariViewController.modalPresentationStyle = .fullScreen

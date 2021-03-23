@@ -1,4 +1,3 @@
-//
 //  NewsTableViewCell.swift
 //  News Application
 
@@ -46,17 +45,14 @@ final class NewsTableViewCell: UITableViewCell {
 		selectionStyle = .none
 		setupView()
 	}
-	
 	required init?(coder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
 	}
 	
 	func setupView() {
-		
 		addSubview(titleLabel)
 		addSubview(newsImage)
 		setupConstraints()
-		
 	}
 	
 	func setupConstraints() {
@@ -67,14 +63,12 @@ final class NewsTableViewCell: UITableViewCell {
 			newsImage.topAnchor.constraint(equalTo: topAnchor),
 			newsImage.heightAnchor.constraint(equalToConstant: 200),
 		])
-		
 // Title
 		NSLayoutConstraint.activate([
 			titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 30),
 			titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
 			titleLabel.topAnchor.constraint(equalTo: newsImage.bottomAnchor, constant: 28),
 			titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16),
-		])
-	}
-	
-}
+		  ])
+	  }
+ }

@@ -1,4 +1,3 @@
-//
 //  ShadowImageView.swift
 //  News Application
 

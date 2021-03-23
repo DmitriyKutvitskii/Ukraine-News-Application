@@ -1,4 +1,3 @@
-//
 //  NewsListViewModel.swift
 //  News Application
 
