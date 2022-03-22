@@ -9,8 +9,8 @@ class ViewController: UIViewController {
     var viewModel = NewsListviewModel()
     
     private lazy var headerView: HeaderView = {
-        let v = HeaderView(fontSize: 32)
-        return v
+        let headerView = HeaderView(fontSize: 32)
+        return headerView
     }()
     
     private lazy var tableView: UITableView = {

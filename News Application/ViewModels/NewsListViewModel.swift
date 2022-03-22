@@ -5,7 +5,7 @@ import Foundation
 
 class NewsListviewModel  {
     var newsVM = [NewsViewModel]()
-    
+
     let reuseID = "news"
     
     func getNews(completion: @escaping ([NewsViewModel]) -> Void) {

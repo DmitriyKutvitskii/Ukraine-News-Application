@@ -8,7 +8,6 @@ class NetworkManager {
     let imageCache = NSCache <NSString, NSData>()
     
     static let shared = NetworkManager()
-    private init() {}
     
     private let baseUrlString = "https://newsapi.org/v2/"
     private let USTopHedline = "top-headlines?country=ua"
