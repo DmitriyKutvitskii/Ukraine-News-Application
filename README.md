@@ -1,5 +1,4 @@
-# 
-Ukraine News-Application
+# Ukraine News-Application
 Fresh news from Ukraine and the World
 
 This application was created with the aim of raising awareness among people...
