@@ -10,6 +10,7 @@ struct News: Decodable {
 	let urlToImage: String?
 	let url: String?
 }
+
 struct NewsEnvelope: Decodable {
 	let status: String?
 	let totalResults: Int
