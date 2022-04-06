@@ -51,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		034F6A2C27FDFD4B00229FC7 /* Resorces */ = {
+			isa = PBXGroup;
+			children = (
+				60D4826C25FCEDB500ECE5A5 /* LaunchScreen.storyboard */,
+				60D4826A25FCEDB500ECE5A5 /* Assets.xcassets */,
+			);
+			path = Resorces;
+			sourceTree = "<group>";
+		};
 		0351D5FA27E9D5040008DB1A /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,7 +82,6 @@
 			children = (
 				60D4827825FD014700ECE5A5 /* ApiKey */,
 				60D4828025FD04F900ECE5A5 /* Services */,
-				60D4827C25FD02A100ECE5A5 /* Models */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -101,9 +109,9 @@
 				60D4828F25FD48F000ECE5A5 /* Views */,
 				0351D5FC27E9D9E20008DB1A /* ViewControllers */,
 				60D4828825FD390900ECE5A5 /* ViewModels */,
+				60D4827C25FD02A100ECE5A5 /* Models */,
 				03D6BD6527EA172F00345966 /* API */,
-				60D4826C25FCEDB500ECE5A5 /* LaunchScreen.storyboard */,
-				60D4826A25FCEDB500ECE5A5 /* Assets.xcassets */,
+				034F6A2C27FDFD4B00229FC7 /* Resorces */,
 				60D4826F25FCEDB500ECE5A5 /* Info.plist */,
 			);
 			path = "News Application";

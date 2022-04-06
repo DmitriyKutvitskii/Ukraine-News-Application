@@ -44,7 +44,7 @@ class ViewController: UIViewController {
             headerView.leadingAnchor.constraint(greaterThanOrEqualTo: view.leadingAnchor),
             headerView.trailingAnchor.constraint(lessThanOrEqualTo: view.trailingAnchor),
         ])
-        // table View
+        // tableView
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: 10),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -59,13 +59,6 @@ class ViewController: UIViewController {
         }
     }
 }
-
-// Checking the request from the server.
-//
-//		NetworkManager.shared.getNews { (news) in
-//			guard let news = news else {return}
-//			print(news[0].title)
-//		}
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     

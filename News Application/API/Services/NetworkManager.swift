@@ -6,7 +6,6 @@ import Foundation
 class NetworkManager {
     
     let imageCache = NSCache <NSString, NSData>()
-    
     static let shared = NetworkManager()
     
     private let baseUrlString = "https://newsapi.org/v2/"

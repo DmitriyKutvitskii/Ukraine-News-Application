@@ -22,8 +22,7 @@ final class HeaderView: UIView {
         image.translatesAutoresizingMaskIntoConstraints = false
         image.contentMode = .scaleAspectFit
         let config = UIImage.SymbolConfiguration(pointSize: fontSize, weight: .bold)
-        image.image = UIImage(systemName: "waveform.path.ecg", withConfiguration:
-                                config)?.withRenderingMode(.alwaysOriginal)
+        image.image = UIImage(systemName: "waveform.path.ecg", withConfiguration: config)?.withRenderingMode(.alwaysOriginal)
         return image
     }()
     
@@ -75,14 +74,14 @@ final class HeaderView: UIView {
     }
     
     private func setupConstraints() {
-        // NEWS Header
+        // NewsHeader
         NSLayoutConstraint.activate([
             headerStackView.topAnchor.constraint(equalTo: topAnchor),
             headerStackView.leadingAnchor.constraint(equalTo: leadingAnchor),
             headerStackView.trailingAnchor.constraint(equalTo: trailingAnchor),
             headerStackView.bottomAnchor.constraint(equalTo: headerStackView.bottomAnchor)
         ])
-        //Subheadline
+        //SubHeadline
         NSLayoutConstraint.activate([
             subheadlineLabel.topAnchor.constraint(equalTo: headerStackView.bottomAnchor, constant: 10),
             subheadlineLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
